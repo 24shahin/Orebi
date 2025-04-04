@@ -5,6 +5,10 @@ import Product from "./Layout/Product";
 import SampleNextArrow from "./Layout/SampleNextArrow";
 import SamplePrevArrow from "./Layout/SamplePrevArrow";
 import Slider from "react-slick";
+import productImage1 from "../../public/assets/images/arr1.png";
+import productImage2 from "../../public/assets/images/arr2.png";
+import productImage3 from "../../public/assets/images/arr3.png";
+import productImage4 from "../../public/assets/images/arr4.png";
 
 function NewArrival() {
   var settings = {
@@ -49,15 +53,11 @@ function NewArrival() {
         <Headings tittle={"New Arrivals"} />
         <Slider {...settings}>
           <div className="!max-w-[370px]">
-            <Product
-              link={"../src/assets/images/arr1.png"}
-              badgeLink={false}
-              overlay={true}
-            />
+            <Product link={productImage1} badgeLink={false} overlay={true} />
           </div>
           <div className="!max-w-[370px]">
             <Product
-              link={"../src/assets/images/arr2.png"}
+              link={productImage2}
               badgrTittle={"New"}
               badgeLink={true}
               overlay={true}
@@ -65,7 +65,7 @@ function NewArrival() {
           </div>
           <div className="!max-w-[370px]">
             <Product
-              link={"../src/assets/images/arr3.png"}
+              link={productImage3}
               badgeLink={false}
               overlay={true}
               brandColor={true}
@@ -74,7 +74,7 @@ function NewArrival() {
           </div>
           <div className="!max-w-[370px]">
             <Product
-              link={"../src/assets/images/arr4.png"}
+              link={productImage4}
               badgrTittle={"-10%"}
               badgeLink={true}
               overlay={true}
@@ -82,7 +82,7 @@ function NewArrival() {
           </div>
           <div className="!max-w-[370px]">
             <Product
-              link={"../src/assets/images/arr1.png"}
+              link={productImage1}
               badgrTittle={"-10%"}
               badgeLink={true}
               overlay={true}
