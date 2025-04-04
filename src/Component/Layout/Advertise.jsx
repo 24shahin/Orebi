@@ -3,6 +3,9 @@ import Container from "./Container";
 import Flex from "./Flex";
 import { Link } from "react-router-dom";
 import Image from "./Image";
+import adverImage1 from "../../../public/assets/images/adver1.png";
+import adverImage2 from "../../../public/assets/images/adver2.png";
+import adverImage3 from "../../../public/assets/images/adver3.png";
 
 function Advertise() {
   return (
@@ -12,10 +15,7 @@ function Advertise() {
           <div className="w-2/4">
             <div className="w-full">
               <Link to="#">
-                <Image
-                  link="../src/assets/images/adver1.png"
-                  style={"w-full"}
-                />
+                <Image link={adverImage1} style={"w-full"} />
               </Link>
             </div>
           </div>
@@ -23,19 +23,13 @@ function Advertise() {
             <div className="w-full">
               {" "}
               <Link to="#">
-                <Image
-                  link="../src/assets/images/adver2.png"
-                  style={"w-full"}
-                />
+                <Image link={adverImage2} style={"w-full"} />
               </Link>
             </div>
             <div className="w-full">
               {" "}
               <Link to="#">
-                <Image
-                  link="../src/assets/images/adver3.png"
-                  style={"w-full"}
-                />
+                <Image link={adverImage3} style={"w-full"} />
               </Link>
             </div>
           </div>

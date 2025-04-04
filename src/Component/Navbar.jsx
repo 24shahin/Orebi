@@ -6,6 +6,7 @@ import List from "./Layout/List";
 import Listitmem from "./Layout/Listitmem";
 import { FaBars } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import Logo from "../../public/assets/images/Logo.png";
 
 export default function Navbar() {
   const [show, setShow] = useState(true);
@@ -27,7 +28,7 @@ export default function Navbar() {
           <Flex style=" flex-col lg:flex-row">
             <div className="w-full lg:w-2/12">
               <a href="#">
-                <Image link="../src/assets/images/Logo.png" />
+                <Image link={Logo} />
               </a>
             </div>
             <div className="relative z-[100] w-full lg:w-10/12">

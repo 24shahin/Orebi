@@ -11,6 +11,7 @@ import { GoTriangleDown } from "react-icons/go";
 import { ImCross } from "react-icons/im";
 import Image from "./Layout/Image";
 import { Link } from "react-router-dom";
+import CartImage from "../../public/assets/images/cartimg.png";
 
 function Header() {
   const [catagoryShow, SetCatagoryShow] = useState(false);
@@ -112,7 +113,7 @@ function Header() {
                       <div className="bg-[#F5F5F3] p-5">
                         <Flex style={"items-center justify-between"}>
                           <div className="w-1/3">
-                            <Image link="../src/assets/images/cartimg.png" />
+                            <Image link={CartImage} />
                           </div>
                           <div className="ml-3 w-5/6 lg:ml-4">
                             <h3>Black Smart Watch</h3>

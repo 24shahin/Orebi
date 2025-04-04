@@ -3,6 +3,10 @@ import Flex from "./Layout/Flex";
 import Container from "./Layout/Container";
 import Headings from "./Layout/Headings";
 import Product from "./Layout/Product";
+import specialOffer1 from "../../public/assets/images/off1.png";
+import specialOffer2 from "../../public/assets/images/off2.png";
+import specialOffer3 from "../../public/assets/images/off3.png";
+import specialOffer4 from "../../public/assets/images/off4.png";
 
 function SpecialOffer() {
   return (
@@ -12,7 +16,7 @@ function SpecialOffer() {
         <Flex style={"justify-between flex-wrap gap-y-5"}>
           <div className="mx-auto w-72 sm:w-[48%] lg:max-w-[370px] xl:w-[24%]">
             <Product
-              link={"../src/assets/images/off1.png"}
+              link={specialOffer1}
               badgrTittle={"New"}
               badgeLink={true}
               overlay={false}
@@ -22,7 +26,7 @@ function SpecialOffer() {
           </div>
           <div className="mx-auto w-72 sm:w-[48%] lg:max-w-[370px] xl:w-[24%]">
             <Product
-              link={"../src/assets/images/off2.png"}
+              link={specialOffer2}
               badgrTittle={"New"}
               badgeLink={true}
               overlay={false}
@@ -32,7 +36,7 @@ function SpecialOffer() {
           </div>
           <div className="mx-auto w-72 sm:w-[48%] lg:max-w-[370px] xl:w-[24%]">
             <Product
-              link={"../src/assets/images/off3.png"}
+              link={specialOffer3}
               badgrTittle={"New"}
               badgeLink={true}
               overlay={false}
@@ -42,7 +46,7 @@ function SpecialOffer() {
           </div>
           <div className="mx-auto w-72 sm:w-[48%] lg:max-w-[370px] xl:w-[24%]">
             <Product
-              link={"../src/assets/images/off4.png"}
+              link={specialOffer4}
               badgrTittle={"New"}
               badgeLink={true}
               overlay={false}

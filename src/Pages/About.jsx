@@ -4,21 +4,29 @@ import Breadcumb from "../Component/Layout/Breadcumb";
 import Flex from "../Component/Layout/Flex";
 import Image from "../Component/Layout/Image";
 import { Link } from "react-router-dom";
+import about1 from "../../public/assets/images/about1.png";
+import about2 from "../../public/assets/images/about2.png";
 
 function About() {
   return (
     <Container>
       <Breadcumb />
       <Flex style={"gap-x-10"}>
-        <div className="w-1/2">
+        <div className="relative w-1/2">
           <Link to="#">
-            <Image link={"../src/assets/images/about.png"} style={"w-full"} />
+            <Image link={about2} style={"w-full"} />
           </Link>
+          <button className="absolute bottom-0 left-1/2 mb-[40px] h-[76px] w-[281px] -translate-x-1/2 bg-tcolor text-white">
+            Our Brand
+          </button>
         </div>
-        <div className="w-1/2">
+        <div className="relative w-1/2">
           <Link to="#">
-            <Image link={"../src/assets/images/about.png"} style={"w-full"} />
+            <Image link={about1} style={"w-full"} />
           </Link>
+          <button className="absolute bottom-0 left-1/2 mb-[40px] h-[76px] w-[281px] -translate-x-1/2 bg-tcolor text-white">
+            Our Stores
+          </button>
         </div>
       </Flex>
       <p className="my-14 text-2xl font-normal leading-relaxed text-tcolor lg:mb-[118px] lg:mt-32 lg:text-[39px]">

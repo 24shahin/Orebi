@@ -6,6 +6,7 @@ import Listitmem from "./Layout/Listitmem";
 import Image from "./Layout/Image";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import FotterLogo from "../../public/assets/images/footer.png";
 
 const Footer = () => {
   return (
@@ -178,7 +179,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="order-4 w-1/2 lg:order-5 lg:w-[40%]">
-            <Image link={"../src/assets/images/footer.png"} />
+            <Image link={FotterLogo} />
           </div>
         </Flex>
         <Flex style={"mt-8 lg:mt-16 items-center"}>
