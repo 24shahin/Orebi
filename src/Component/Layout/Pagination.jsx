@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
 import Product from "./Product";
 import Flex from "./Flex";
+import productItem from "../../../public/assets/images/arr1.png";
 
 const items = [
   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22,
@@ -20,7 +21,7 @@ function Items({ currentItems }) {
           <Flex style={"w-full lg:w-[31%] flex-wrap sm:w-[48%]"} key={index}>
             <Product
               style={""}
-              link={"../src/assets/images/arr1.png"}
+              link={productItem}
               overlay={true}
               brandName={"Black"}
               brandColor={true}
