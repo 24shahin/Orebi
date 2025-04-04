@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import Image from "./Layout/Image";
 import { Link } from "react-router-dom";
+import sliderImage from "../../public/assets/images/banner.png";
 
 function Banner() {
   const [dotActive, SetDotActive] = useState(0);
@@ -169,22 +170,22 @@ function Banner() {
       <Slider {...settings}>
         <div>
           <Link to={"#"}>
-            <Image link="/public/assets/images/banner.png" style={"mx-auto"} />
+            <Image link={sliderImage} style={"mx-auto"} />
           </Link>
         </div>
         <div>
           <Link to={"#"}>
-            <Image link="/public/assets/images/banner.png" style={"mx-auto"} />
+            <Image link={sliderImage} style={"mx-auto"} />
           </Link>
         </div>
         <div>
           <Link to={"#"}>
-            <Image link="/public/assets/images/banner.png" style={"mx-auto"} />
+            <Image link={sliderImage} style={"mx-auto"} />
           </Link>
         </div>
         <div>
           <Link to={"#"}>
-            <Image link="/public/assets/images/banner.png" style={"mx-auto"} />
+            <Image link={sliderImage} style={"mx-auto"} />
           </Link>
         </div>
       </Slider>
