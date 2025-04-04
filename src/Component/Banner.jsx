@@ -169,22 +169,34 @@ function Banner() {
       <Slider {...settings}>
         <div>
           <Link to={"#"}>
-            <Image link="../src/assets/images/banner.png" style={"mx-auto"} />
+            <Image
+              link="../public/assets/images/banner.png"
+              style={"mx-auto"}
+            />
           </Link>
         </div>
         <div>
           <Link to={"#"}>
-            <Image link="../src/assets/images/banner.png" style={"mx-auto"} />
+            <Image
+              link="../public/assets/images/banner.png"
+              style={"mx-auto"}
+            />
           </Link>
         </div>
         <div>
           <Link to={"#"}>
-            <Image link="../src/assets/images/banner.png" style={"mx-auto"} />
+            <Image
+              link="../public/assets/images/banner.png"
+              style={"mx-auto"}
+            />
           </Link>
         </div>
         <div>
           <Link to={"#"}>
-            <Image link="../src/assets/images/banner.png" style={"mx-auto"} />
+            <Image
+              link="../public/assets/images/banner.png"
+              style={"mx-auto"}
+            />
           </Link>
         </div>
       </Slider>
