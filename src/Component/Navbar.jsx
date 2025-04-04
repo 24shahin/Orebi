@@ -27,7 +27,7 @@ export default function Navbar() {
         <Container>
           <Flex style=" flex-col lg:flex-row">
             <div className="w-full lg:w-2/12">
-              <a href="#">
+              <a href="/">
                 <Image link={Logo} />
               </a>
             </div>
