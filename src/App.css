@@ -1,3 +1,17 @@
 body {
   font-family: "DM Sans", "sans-serif";
 }
+.square-radio {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #c0bebe;
+  background-color: #fff;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.square-radio:checked {
+  background-color: #000;
+}

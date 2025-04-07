@@ -12,6 +12,7 @@ export default {
       colors: {
         tcolor: "#262626",
         t2color: "#767676",
+        bordercolor: "#f0f0f0",
       },
     },
   },

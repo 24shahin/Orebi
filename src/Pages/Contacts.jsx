@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import Container from "../Component/Layout/Container";
 import Breadcumb from "../Component/Layout/Breadcumb";
 import Headings from "../Component/Layout/Headings";
 import Location from "../Component/Layout/Location";
+import OutSideClick from "../feature/function/click";
 
 function Contacts() {
+  const [slovakiaOfficeShow, setSlovakiaOfficeShow] = useState(false);
+  const [germanyOfficeShow, setGermanyOfficeShow] = useState(false);
+  const slovakiaRef = useRef(null);
+  const germanyRef = useRef(null);
+  OutSideClick(slovakiaRef, () => setSlovakiaOfficeShow(false));
+  OutSideClick(germanyRef, () => setGermanyOfficeShow(false));
   return (
     <Container>
       <Breadcumb />
@@ -37,7 +44,7 @@ function Contacts() {
           <textarea
             type="text"
             placeholder="Your message here"
-            className="text-bold w-[780px] border-b border-[#F0F0F0] py-[17px] text-sm text-t2color outline-none"
+            className="text-bold w-[780px] resize-none border-b border-[#F0F0F0] py-[17px] text-sm text-t2color outline-none"
           />
         </div>
         <button className="bg-tcolor px-[84px] py-4 text-sm font-bold text-white">
@@ -48,12 +55,54 @@ function Contacts() {
         className="w-full p-20"
         style={{ background: `url(../../public/assets/images/Location.png)` }}
       >
-        <Location
-          address={"575 Crescent Ave. Quakertown, PA 18951"}
-          mobile={"+432 533 12 523"}
-          email={"info@domain.com"}
-          time={"Mon - Fri: 9am - 6pm"}
-        />
+        <div className="w-[450px] bg-white ">
+          <div className="border-b border-[#f0f0f0]">
+            <h3
+              className="flex cursor-pointer items-center justify-between  px-5 py-[30px] text-base font-bold text-tcolor"
+              onClick={() => setGermanyOfficeShow(true)}
+            >
+              Germany Office <span>+</span>
+            </h3>
+            {germanyOfficeShow && (
+              <div ref={germanyRef}>
+                <Location
+                  address={"575 Crescent Ave. Quakertown, PA 18951"}
+                  mobile={"+432 533 12 523"}
+                  email={"info@domain.com"}
+                  time={"Mon - Fri: 9am - 6pm"}
+                />
+              </div>
+            )}
+          </div>
+          <div className="border-b border-[#f0f0f0]">
+            <h3
+              className="flex cursor-pointer items-center justify-between  px-5 py-[30px] text-base font-bold text-tcolor"
+              onClick={() => setSlovakiaOfficeShow(true)}
+            >
+              Slovakia Office <span>+</span>
+            </h3>
+            {slovakiaOfficeShow && (
+              <div ref={slovakiaRef}>
+                <Location
+                  address={"575 Crescent Ave. Quakertown, PA 18951"}
+                  mobile={"+432 533 12 523"}
+                  email={"info@domain.com"}
+                  time={"Mon - Fri: 9am - 6pm"}
+                />
+              </div>
+            )}
+          </div>
+
+          <h3 className="flex cursor-pointer items-center justify-between px-5 py-[30px] text-base font-bold text-tcolor">
+            Lithuania Office
+          </h3>
+          <Location
+            address={"575 Crescent Ave. Quakertown, PA 18951"}
+            mobile={"+432 533 12 523"}
+            email={"info@domain.com"}
+            time={"Mon - Fri: 9am - 6pm"}
+          />
+        </div>
       </div>
     </Container>
   );

@@ -10,10 +10,11 @@ import { FaSearch, FaUser, FaShoppingCart } from "react-icons/fa";
 import { GoTriangleDown } from "react-icons/go";
 import { ImCross } from "react-icons/im";
 import Image from "./Layout/Image";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import CartImage from "../../public/assets/images/cartimg.png";
 
 function Header() {
+  const navigate = useNavigate();
   const [catagoryShow, SetCatagoryShow] = useState(false);
   const [userShow, SetUserShow] = useState(false);
   const [cartShow, SetCartShow] = useState(false);
@@ -95,7 +96,10 @@ function Header() {
                   <GoTriangleDown />
                   {userShow && (
                     <List style="w-[150px] lg:w-[263px] bg-tcolor text-white absolute top-[32px] lg:top-8 right-0">
-                      <Listitmem style="text-center py-2.5 lg:py-4 inline-block text-tcolor hover:text-white hover:bg-tcolor bg-white duration-300 hover: w-full text-sm font-bold border-[#f0f0f0] border hover:border-tcolor">
+                      <Listitmem
+                        style="text-center py-2.5 lg:py-4 inline-block text-tcolor hover:text-white hover:bg-tcolor bg-white duration-300 hover: w-full text-sm font-bold border-[#f0f0f0] border hover:border-tcolor"
+                        onClick={() => navigate("/myAccount")}
+                      >
                         My Account
                       </Listitmem>
                       <Listitmem style="text-center py-2.5 lg:py-4 inline-block text-tcolor hover:text-white hover:bg-tcolor bg-white duration-300 hover: w-full text-sm font-bold border-[#f0f0f0] border hover:border-tcolor">
