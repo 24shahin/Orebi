@@ -16,7 +16,7 @@ function About() {
           <Link to="#">
             <Image link={about2} style={"w-full"} />
           </Link>
-          <button className="absolute bottom-0 left-1/2 mb-[40px] h-[76px] w-[281px] -translate-x-1/2 bg-tcolor text-white">
+          <button className="absolute bottom-0 left-1/2 -mb-5 h-12 w-32 -translate-x-1/2 bg-tcolor text-white md:mb-[40px] md:h-[76px] md:w-[281px]">
             Our Brand
           </button>
         </div>
@@ -24,7 +24,7 @@ function About() {
           <Link to="#">
             <Image link={about1} style={"w-full"} />
           </Link>
-          <button className="absolute bottom-0 left-1/2 mb-[40px] h-[76px] w-[281px] -translate-x-1/2 bg-tcolor text-white">
+          <button className="absolute bottom-0 left-1/2 -mb-5 h-12 w-32 -translate-x-1/2 bg-tcolor text-white md:mb-[40px] md:h-[76px] md:w-[281px]">
             Our Stores
           </button>
         </div>

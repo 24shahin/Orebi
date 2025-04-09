@@ -8,17 +8,17 @@ function Login() {
   return (
     <Container>
       <Breadcumb />
-      <div className="border-bordercolor mb-[57px] border-b">
-        <h3 className="w-[644px] pb-[62px] text-base text-t2color">
+      <div className="mb-9 border-b border-bordercolor md:mb-[57px]">
+        <h3 className="w-full pb-9 text-base text-t2color md:w-[644px] md:pb-[62px]">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the.
         </h3>
       </div>
-      <div className="border-bordercolor border-b pb-[70px]">
+      <div className="border-b border-bordercolor pb-[70px]">
         <Headings tittle={"Returning Customer"} />
-        <Flex style={"gap-x-10 mb-[30px]"}>
-          <div className="flex w-[508px] flex-col">
+        <div className={"mb-[30px] flex flex-col gap-x-10 gap-y-7 md:flex-row"}>
+          <div className="flex w-full flex-col md:w-[508px]">
             <label
               htmlFor=""
               className="mb-2.5 text-base font-bold text-tcolor"
@@ -28,10 +28,10 @@ function Login() {
             <input
               type="Email"
               placeholder="example@Gmail.com"
-              className="border-bordercolor w-full border-b py-4 text-sm text-t2color outline-none"
+              className="w-full border-b border-bordercolor py-4 text-sm text-t2color outline-none"
             />
           </div>
-          <div className="flex w-[508px] flex-col">
+          <div className="flex w-full flex-col md:w-[508px]">
             <label
               htmlFor=""
               className="mb-2.5 text-base font-bold text-tcolor"
@@ -41,23 +41,23 @@ function Login() {
             <input
               type="password"
               placeholder="******"
-              className="border-bordercolor w-full border-b py-4 text-sm text-t2color outline-none"
+              className="w-full border-b border-bordercolor py-4 text-sm text-t2color outline-none"
             />
           </div>
-        </Flex>
-        <button className="boder h-[50px] w-[200px] border border-[#2b2b2b] bg-white font-bold transition-all duration-200 ease-linear hover:bg-tcolor hover:text-white">
+        </div>
+        <button className="boder h-9 w-32 border border-[#2b2b2b] bg-white font-bold transition-all duration-200 ease-linear hover:bg-tcolor hover:text-white md:h-[50px] md:w-[200px]">
           Log in
         </button>
       </div>
-      <div className="mt-[58px]">
+      <div className="mt-9 md:mt-[58px]">
         <Headings tittle={"New Customer"} />
         <div className="mt-9">
-          <h3 className="w-[644px] pb-[62px] text-base text-t2color">
+          <h3 className="w-full pb-9 text-base text-t2color md:w-[644px] md:pb-[62px]">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the.
           </h3>
-          <button className="boder h-[50px] w-[200px] border border-[#2b2b2b] bg-tcolor font-bold text-white transition-all duration-200 ease-linear hover:bg-white hover:text-tcolor">
+          <button className="h-9 w-32 border border-[#2b2b2b] bg-tcolor font-bold text-white transition-all duration-200 ease-linear hover:bg-white hover:text-tcolor md:h-[50px] md:w-[200px]">
             Continue
           </button>
         </div>

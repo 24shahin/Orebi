@@ -9,17 +9,21 @@ function Registration() {
     <Container>
       <Breadcumb />
       <div className="border-b border-bordercolor">
-        <h3 className="w-[644px] pb-[62px] text-base text-t2color">
+        <h3 className="w-full pb-9 text-base text-t2color md:w-[644px] md:pb-[62px]">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the.
         </h3>
       </div>
-      <div className="mt-[57px]">
+      <div className="mt-9 md:mt-[57px]">
         <Headings tittle={"Your Personal Details"} />
-        <Flex style={"gap-x-10 border-b border-bordercolor pb-[70px]"}>
+        <div
+          className={
+            "flex flex-col gap-x-10 gap-y-6 border-b border-bordercolor pb-[70px] md:flex-row "
+          }
+        >
           <div className="">
-            <div className="mb-6 flex w-[508px] flex-col">
+            <div className="mb-6 flex w-full flex-col md:w-[508px]">
               <label
                 htmlFor=""
                 className="mb-2.5 text-base font-bold text-tcolor"
@@ -32,7 +36,7 @@ function Registration() {
                 className="w-full border-b border-bordercolor py-4 text-sm text-t2color outline-none"
               />
             </div>
-            <div className="flex w-[508px] flex-col">
+            <div className="flex w-full flex-col md:w-[508px]">
               <label
                 htmlFor=""
                 className="mb-2.5 text-base font-bold text-tcolor"
@@ -47,7 +51,7 @@ function Registration() {
             </div>
           </div>
           <div className="">
-            <div className="mb-6 flex w-[508px] flex-col">
+            <div className="mb-6 flex w-full flex-col md:w-[508px]">
               <label
                 htmlFor=""
                 className="mb-2.5 text-base font-bold text-tcolor"
@@ -60,7 +64,7 @@ function Registration() {
                 className="w-full border-b border-bordercolor py-4 text-sm text-t2color outline-none"
               />
             </div>
-            <div className="flex w-[508px] flex-col">
+            <div className="flex w-full flex-col md:w-[508px]">
               <label
                 htmlFor=""
                 className="mb-2.5 text-base font-bold text-tcolor"
@@ -74,13 +78,13 @@ function Registration() {
               />
             </div>
           </div>
-        </Flex>
+        </div>
       </div>
       <div className="mt-[57px]">
         <Headings tittle={"New Customer"} />
-        <Flex style={"gap-x-10 border-b border-bordercolor pb-[70px]"}>
+        <div className="flex flex-col gap-x-10 gap-y-6 border-b border-bordercolor pb-[70px] md:flex-row">
           <div className="">
-            <div className="mb-6 flex w-[508px] flex-col">
+            <div className="mb-6 flex w-full flex-col md:w-[508px]">
               <label
                 htmlFor=""
                 className="mb-2.5 text-base font-bold text-tcolor"
@@ -93,7 +97,7 @@ function Registration() {
                 className="w-full border-b border-bordercolor py-4 text-sm text-t2color outline-none"
               />
             </div>
-            <div className="mb-6 flex w-[508px] flex-col">
+            <div className="mb-6 flex w-full flex-col md:w-[508px]">
               <label
                 htmlFor=""
                 className="mb-2.5 text-base font-bold text-tcolor"
@@ -106,14 +110,14 @@ function Registration() {
                 className="w-full border-b border-bordercolor py-4 text-sm text-t2color outline-none"
               />
             </div>
-            <div className="flex w-[508px] flex-col">
+            <div className="flex w-full flex-col md:w-[508px]">
               <label
                 htmlFor=""
                 className="mb-2.5 text-base font-bold text-tcolor"
               >
                 Country
               </label>
-              <select className="text-sm text-t2color">
+              <select className="w-full text-sm text-t2color">
                 <option value="" defaultChecked>
                   Please select
                 </option>
@@ -127,7 +131,7 @@ function Registration() {
             </div>
           </div>
           <div className="">
-            <div className="mb-6 flex w-[508px] flex-col">
+            <div className="mb-6 flex w-full flex-col md:w-[508px]">
               <label
                 htmlFor=""
                 className="mb-2.5 text-base font-bold text-tcolor"
@@ -140,7 +144,7 @@ function Registration() {
                 className="w-full border-b border-bordercolor py-4 text-sm text-t2color outline-none"
               />
             </div>
-            <div className="mb-6 flex w-[508px] flex-col">
+            <div className="mb-6 flex w-full flex-col md:w-[508px]">
               <label
                 htmlFor=""
                 className="mb-2.5 text-base font-bold text-tcolor"
@@ -153,7 +157,7 @@ function Registration() {
                 className="w-full border-b border-bordercolor py-4 text-sm text-t2color outline-none"
               />
             </div>
-            <div className="flex w-[508px] flex-col">
+            <div className="flex w-full flex-col md:w-[508px]">
               <label
                 htmlFor=""
                 className="mb-2.5 text-base font-bold text-tcolor"
@@ -173,12 +177,14 @@ function Registration() {
               </select>
             </div>
           </div>
-        </Flex>
+        </div>
       </div>
-      <div className="mb-[65px] mt-[57px] border-b border-bordercolor pb-[70px]">
+      <div className="mt-[57px] pb-9 md:mb-[65px] md:border-b md:border-bordercolor md:pb-[70px]">
         <Headings tittle={"Your Password"} />
-        <Flex style={"gap-x-10 mb-[30px]"}>
-          <div className="flex w-[508px] flex-col">
+        <div
+          className={"mb-[30px] flex flex-col gap-x-10 gap-y-10 md:flex-row"}
+        >
+          <div className="flex w-full flex-col md:w-[508px]">
             <label
               htmlFor=""
               className="mb-2.5 text-base font-bold text-tcolor"
@@ -191,7 +197,7 @@ function Registration() {
               className="w-full border-b border-bordercolor py-4 text-sm text-t2color outline-none"
             />
           </div>
-          <div className="flex w-[508px] flex-col">
+          <div className="flex w-full flex-col md:w-[508px]">
             <label
               htmlFor=""
               className="mb-2.5 text-base font-bold text-tcolor"
@@ -204,7 +210,7 @@ function Registration() {
               className="w-full border-b border-bordercolor py-4 text-sm text-t2color outline-none"
             />
           </div>
-        </Flex>
+        </div>
       </div>
       <div>
         <Flex style={"gap-x-4"}>
@@ -213,7 +219,7 @@ function Registration() {
             I have read and agree to the Privacy Policy
           </h3>
         </Flex>
-        <Flex style={"gap-x-9 items-center mt-6 mb-7"}>
+        <Flex style={" gap-x-5 md:gap-x-9 items-center mt-6 mb-7"}>
           <h3 className=" text-sm text-t2color">Subscribe Newsletter</h3>
           <div className="flex gap-x-3">
             <input type="radio" name="subscribe" className="square-radio" />
@@ -229,7 +235,7 @@ function Registration() {
           </div>
         </Flex>
       </div>
-      <button className="boder h-[50px] w-[200px] border border-[#2b2b2b] bg-tcolor font-bold text-white transition-all duration-200 ease-linear hover:bg-white hover:text-tcolor">
+      <button className="h-9 w-32 border border-[#2b2b2b] bg-tcolor font-bold text-white transition-all duration-200 ease-linear hover:bg-white hover:text-tcolor md:h-[50px] md:w-[200px]">
         Sign Up
       </button>
     </Container>

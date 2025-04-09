@@ -25,11 +25,11 @@ function MyAccount() {
           {menuItems.map((item) => (
             <List
               key={item}
-              style={"w-[234px] border-b border-bordercolor pb-5 mb-5"}
+              style={"sm:w-[234px] border-b border-bordercolor pb-5 mb-5 w-32"}
             >
               <Listitmem
                 onClick={() => setActiveItem(item)}
-                style={`text-base text-tcolor cursor-pointer transition-all duration-200 ease-linear ${
+                style={`text-sm md:text-base text-tcolor cursor-pointer transition-all duration-200 ease-linear ${
                   activeItem === item ? "font-bold" : "font-normal"
                 }`}
               >
@@ -40,7 +40,7 @@ function MyAccount() {
         </div>
 
         <div className="w-[925px]">
-          <h2 className="mb-10 text-base text-t2color ">
+          <h2 className="mb-10 text-sm text-t2color md:text-base ">
             Hello <span className="font-bold text-tcolor">admin</span> (not{" "}
             <span className="font-bold text-tcolor">admin</span>?{" "}
             <span className="cursor-pointer font-bold text-tcolor">
@@ -48,7 +48,7 @@ function MyAccount() {
             </span>
             )
           </h2>
-          <p className="text-base text-t2color">
+          <p className="text-sm text-t2color md:text-base">
             From your account dashboard you can view your{" "}
             <span className="font-bold text-tcolor">recent orders</span>, manage
             your{" "}
