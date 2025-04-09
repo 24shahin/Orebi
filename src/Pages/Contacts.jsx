@@ -48,18 +48,18 @@ function Contacts() {
             className="text-bold w-full resize-none border-b border-[#F0F0F0] py-[17px] text-sm text-t2color outline-none md:w-[780px]"
           />
         </div>
-        <button className="bg-tcolor px-[84px] py-4 text-sm font-bold text-white">
+        <button className="h-9 w-32 border border-[#2b2b2b] bg-tcolor font-bold text-white transition-all duration-200 ease-linear hover:bg-white hover:text-tcolor md:h-[50px] md:w-[200px]">
           Post
         </button>
       </div>
       <div
-        className="w-full p-20"
+        className="w-full p-10 md:p-20"
         style={{ background: `url(${LocationImage})` }}
       >
-        <div className="w-[450px] bg-white ">
+        <div className="w-[250px] bg-white md:w-[450px] ">
           <div className="border-b border-[#f0f0f0]">
             <h3
-              className="flex cursor-pointer items-center justify-between  px-5 py-[30px] text-base font-bold text-tcolor"
+              className="flex cursor-pointer items-center justify-between px-4 py-3  text-base font-bold text-tcolor md:px-5 md:py-[30px]"
               onClick={() => setGermanyOfficeShow(true)}
             >
               Germany Office <span>+</span>
@@ -77,7 +77,7 @@ function Contacts() {
           </div>
           <div className="border-b border-[#f0f0f0]">
             <h3
-              className="flex cursor-pointer items-center justify-between  px-5 py-[30px] text-base font-bold text-tcolor"
+              className="flex cursor-pointer items-center justify-between px-4 py-3  text-base font-bold text-tcolor md:px-5 md:py-[30px]"
               onClick={() => setSlovakiaOfficeShow(true)}
             >
               Slovakia Office <span>+</span>
@@ -94,7 +94,7 @@ function Contacts() {
             )}
           </div>
 
-          <h3 className="flex cursor-pointer items-center justify-between px-5 py-[30px] text-base font-bold text-tcolor">
+          <h3 className="fflex cursor-pointer items-center justify-between px-4 py-3  text-base font-bold text-tcolor md:px-5 md:py-[30px]">
             Lithuania Office
           </h3>
           <Location
