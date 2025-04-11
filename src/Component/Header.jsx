@@ -130,17 +130,20 @@ function Header() {
                       </div>
                       <div className="px-5">
                         <h3 className="my-3.5 text-[#767676]">
-                          Subtotal:{" "}
+                          Subtotal:
                           <span className="font-bold text-tcolor">$44.00</span>
                         </h3>
                       </div>
                       <Flex style={"justify-between mx-5 mb-5"}>
-                        <Link
-                          to="#"
-                          className="inline-block w-[110px] border border-[#2B2B2B] py-2.5 text-center text-sm font-bold lg:w-[148px] lg:py-4"
+                        <h3
+                          className="inline-block w-[110px] cursor-pointer border border-[#2B2B2B] py-2.5 text-center text-sm font-bold lg:w-[148px] lg:py-4"
+                          onClick={() => {
+                            navigate("/cart");
+                            SetCartShow(false);
+                          }}
                         >
                           View Cart
-                        </Link>
+                        </h3>
                         <Link
                           to="#"
                           className="inline-block w-[110px] border border-[#2B2B2B] bg-tcolor py-2.5 text-center text-sm font-bold text-white lg:w-[148px] lg:py-4"

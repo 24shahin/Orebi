@@ -13,6 +13,8 @@ import Contacts from "./Pages/Contacts";
 import Login from "./Component/Login";
 import Registration from "./Component/Registration";
 import MyAccount from "./Component/MyAccount";
+import NotFound from "./Pages/NotFound";
+import Cart from "./Pages/Cart";
 
 function App() {
   const router = createBrowserRouter(
@@ -24,7 +26,9 @@ function App() {
         <Route path="/myAccount" element={<MyAccount />} />
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/cart" element={<Cart />} />
         <Route path="/contacts" element={<Contacts />} />
+        <Route path="/notfound" element={<NotFound />} />
       </Route>,
     ),
   );
