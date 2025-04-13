@@ -99,6 +99,12 @@ function Cart() {
                     >
                       XL
                     </option>
+                    <option
+                      value=""
+                      className="text-sm text-t2color lg:text-base"
+                    >
+                      XXL
+                    </option>
                   </select>
                 </div>
                 <h3 className="cursor-pointer text-sm font-bold text-tcolor">
