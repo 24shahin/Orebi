@@ -67,8 +67,8 @@ function Cart() {
             </div>
             <div className="flex items-center justify-between border-t border-bordercolor p-3 lg:p-5">
               <div className="flex items-center gap-x-3 lg:gap-x-6">
-                <div className="w-[120px] border border-[#eaeaea] lg:w-[255px] lg:px-5 lg:py-2.5">
-                  <select className="w-full bg-transparent px-3 py-2 text-sm text-t2color lg:text-base">
+                <div className="w-[120px] border border-[#eaeaea] px-3 py-2 lg:w-[255px] lg:px-5 lg:py-2.5">
+                  <select className="w-full bg-transparent  text-sm text-t2color lg:text-base">
                     <option
                       value=""
                       className="text-sm text-t2color lg:text-base"
