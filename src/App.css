@@ -15,3 +15,13 @@ body {
 .square-radio:checked {
   background-color: #000;
 }
+.lineShadow-r:hover {
+  -webkit-box-shadow: 10px 0px 21px 0px rgba(179, 175, 179, 1);
+  -moz-box-shadow: 10px 0px 21px 0px rgba(179, 175, 179, 1);
+  box-shadow: 10px 0px 21px 0px rgba(179, 175, 179, 1);
+}
+.lineShadow-l:hover {
+  -webkit-box-shadow: -10px 0px 21px 0px rgba(179, 175, 179, 1);
+  -moz-box-shadow: -10px 0px 21px 0px rgba(179, 175, 179, 1);
+  box-shadow: -10px 0px 21px 0px rgba(179, 175, 179, 1);
+}

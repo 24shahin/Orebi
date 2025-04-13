@@ -14,6 +14,12 @@ export default {
         t2color: "#767676",
         bordercolor: "#f0f0f0",
       },
+      width: {
+        detailWidth: "56%",
+        QNTWidth: "20%",
+        priceWidth: "12%",
+        totalWidth: "12%",
+      },
     },
   },
   plugins: [],
