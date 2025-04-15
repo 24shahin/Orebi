@@ -15,6 +15,7 @@ import Registration from "./Component/Registration";
 import MyAccount from "./Component/MyAccount";
 import NotFound from "./Pages/NotFound";
 import Cart from "./Pages/Cart";
+import CheckOut from "./Pages/CheckOut";
 
 function App() {
   const router = createBrowserRouter(
@@ -26,6 +27,7 @@ function App() {
         <Route path="/myAccount" element={<MyAccount />} />
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/checkOut" element={<CheckOut />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/notfound" element={<NotFound />} />
