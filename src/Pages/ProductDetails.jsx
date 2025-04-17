@@ -184,7 +184,7 @@ function ProductDetails() {
         </div>
       </div>
       <div>
-        <div className="mb-10 flex gap-x-[62px]">
+        <div className="mb-10 flex gap-x-3 lg:gap-x-[62px]">
           <h3
             className={`cursor-pointer text-xl  ${showTitle == "description" ? "font-bold text-tcolor" : "text-t2color"}`}
             onClick={() => setShowtitle("description")}
