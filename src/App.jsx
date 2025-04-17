@@ -16,12 +16,16 @@ import MyAccount from "./Component/MyAccount";
 import NotFound from "./Pages/NotFound";
 import Cart from "./Pages/Cart";
 import CheckOut from "./Pages/CheckOut";
+import ProductDetails from "./Pages/ProductDetails";
 
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<Root />}>
         <Route path="/" element={<Home />} />
+        {/* this navItem will remove from navbar after Developing */}
+        <Route path="/productDetails" element={<ProductDetails />} />
+        {/* this navItem will remove from navbar after Developing */}
         <Route path="/login" element={<Login />} />
         <Route path="/signUp" element={<Registration />} />
         <Route path="/myAccount" element={<MyAccount />} />

@@ -53,6 +53,16 @@ export default function Navbar() {
                   <Listitmem style="font-dm font-bold text-sm pr-2 lg:pr-0">
                     <Link to="/journal">Journal</Link>
                   </Listitmem>
+                  {/* this navItem will remove from navbar after Developing */}
+                  <Listitmem style="font-dm font-bold text-sm pr-2 lg:pr-0">
+                    <Link
+                      to="/productDetails"
+                      title="this navItem will remove from navbar after Developing. this page show you when search a product/click a product for knowing details"
+                    >
+                      Product Details
+                    </Link>
+                  </Listitmem>
+                  {/* this navItem will remove from navbar after Developing */}
                 </List>
               )}
             </div>

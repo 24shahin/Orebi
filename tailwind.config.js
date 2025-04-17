@@ -19,6 +19,7 @@ export default {
         QNTWidth: "20%",
         priceWidth: "12%",
         totalWidth: "12%",
+        prodDetails: "48%",
       },
     },
   },
